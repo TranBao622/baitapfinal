@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box
+}
+html{ font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif", Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"}
+#main{}
+/*phần header*/
+#header{width: 100%;
+	height: 50px; 
+	background-color: white; 
+	border-bottom: 1px solid #434343;
+display: flex; justify-content: space-between; position: fixed; align-items: center; z-index: 10 }
+
+.nav{position: relative}
+.nav>li{ display: inline-block;
+}
+
+.nav li a{ color: #3F3A35; 
+	text-decoration:none;
+	line-height: 50px; 
+	font-size: 20px; 
+	padding: 0 15px;
+	font-weight:600
+}
+.nav .menu li:hover a,
+.nav>li:hover>a {
+	color:#121110 ;
+	border-bottom: 3px solid #121110; background-color:#EFEFEF
+	
+}
+.nav .menu{ background-color: white;width: 350px;
+position: absolute;
+box-shadow: 0 0 10px rgba(0,0,0,0.3);
+display: none}
+.nav li:hover .menu{display: block}
+ #logo {width: auto;
+height: 50px;
+}
+a {display: block;}
+/*xong phần header*/
+#slide{ position: relative;
+	z-index: 1;
+}
+#slide img{ height: 500px; width: 100%;object-fit: cover;display: block;box-shadow: 0 0 0 9999px rgba(0,0,0,0.05)}
+
+#content{}
+#website{}
+#gray{
+	height: 300px;
+	padding-top: 50px;
+	background-color:#F7F7F6;
+	position: relative
+}
+#pink{
+	height: 180px;
+	padding-top: 5px;
+	background-color:#FFF6EE;
+	
+}
+#pink>div{display: flex; justify-content:space-around; align-items: center; }
+#pink .col-3{display: flex; justify-content: space-between; align-items: center}
+#gray h3, h1{text-align: center; text-transform: uppercase;}
+#pink h1 {color: darkred; font-size: 30px;  }
+#pink h3 {font-weight: 300; font-size:16px; padding-right: 10px}
+.vertical-lines { width: 2px; height: 50px; }
+.w-90{ width: 90%; margin: auto}
+#gray>h1{text-align: center; text-transform: uppercase; padding-top: 20px;color: #3E3934}
+/*xong section2*/
+
+#new{ }
+.sun{width: 850px; height: auto;}
+.block{background-color:#E4E4E4;display: flex; justify-content: space-around; align-items: center; }
+.content>h1{font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; font-weight:800; font-size: 48px; color:#3E3934; text-align: left}
+.content>p{font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size:30px;color: #3E3934; font-weight:200; padding-top:10px;padding-bottom: 20px}
+.content>button {background-color: #3E3934;color: white; padding: 20px 40px; border: none;border-radius: 40px;font-size: 30px; cursor: pointer; transition: 0.3s; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; text-transform: capitalize; }
+button:hover{background-color:#0C0B0A; box-shadow: 5px 5px 15px rgba(0,0,0,0.4); font-weight: 700 }
+#treatment{ height: 800px;font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; padding-top: 100px; font-size: 25px; color:#3E3934 }
+#blue { background-color:blue;height: 300px;width: 150px;  }
+#green { background-color:green;height: 300px;width: 150px}
+#organ { background-color:orangered;height: 300px;;width: 150px}
+#purple { background-color:purple;height: 300px;width: 150px}
+#list img {width:auto; height: 310px; object-fit: cover}
+#list{display: flex; justify-content: space-around; align-items: center; padding-top: 50px; position: relative }
+.overplay{position: absolute;top: 0;left:0; width: 100%; height: 100%;background-color: rgba(0,0,0,0.5);opacity: 0;transition: opacity 0.3s ease}
+.hover-text {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: white;font-size:20px; font-weight: 400; opacity: 0; transition: opacity 0.3s ease; font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; text-transform: uppercase;text-align: center}
+.bock2{position: relative; display: inline-block}
+.bock2:hover .overplay, .bock2:hover .hover-text{opacity:1}
+.hover-list{position: absolute; opacity: 0; pointer-events: none; transition: opacity 0.3s ease}
+.bock2:hover + .hover-list{opacity:1; pointer-events: auto}
+/*xong section3*/
+.doctor{width: 100%; height: auto;display: block;}
+#aboutus .col-4{position: absolute;top: 15%; left:5%}
+#aboutus {display: inline-block; position: relative;}
+#aboutus h1{font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; color: darkblue; font-size: 40px; text-align: center;padding-bottom: 5px}
+#aboutus h3{font-size: 28px; font-weight: 400; text-align: left; padding-bottom: 20px}
+#aboutus button{background-color:#FFFFFF; padding: 20px 40px; border: 2px solid #A1A1A1; border-radius: 50px; text-transform: uppercase; font-weight: 600; box-shadow: 0 0 0 0.5; font-size: 20px}
+#aboutus .sign{position: absolute;top:15%; right:10%}
+/*xong section4*/
+
+    /* Căn giữa cả chữ và form */
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Chiều cao toàn màn hình */
+        text-align: center;
+		background: url("../hình ảnh/Screenshot 2025-03-27 153514.png") no-repeat center center;
+		background-size:cover;
+    }
+
+    /* Căn chỉnh form */
+    .contact-form {
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Style cơ bản cho input & button */
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+		padding-bottom: 10px
+    }
+
+    .contact-form button {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background 0.3s;
+		
+    }
+
+    .contact-form button:hover {
+        background-color: #555;
+    }
+.contact-section h2 {font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; font-size: 40px; padding-bottom: 10px}
+.contact-section p {padding-bottom: 10px}
+.footer {
+    background: #222;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer p, .footer a {
+    font-size: 14px;
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a:hover {
+    color: dodgerblue;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 20px;
+    transition: 0.3s
+	;gap: 20px
+}
+
+.social-links a:hover {
+    color: dodgerblue;
+}
+
+.footer-credit {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+#footer{}
+
+
+ 
